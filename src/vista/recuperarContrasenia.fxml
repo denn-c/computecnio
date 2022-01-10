@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<FlowPane fx:id="flowPanePrincipal" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="420.0" styleClass="background-root" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.RecuperarContraseniaControlador">
+   <FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="400.0">
+      <styleClass>
+         <String fx:value="background-root" />
+         <String fx:value="dropshadow-light-button" />
+         <String fx:value="radius-15percent" />
+      </styleClass>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="400.0">
+         <styleClass>
+            <String fx:value="background-root" />
+            <String fx:value="dropshadow-shadow-button" />
+            <String fx:value="radius-15percent" />
+         </styleClass>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+         <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="360.0">
+            <VBox.margin>
+               <Insets right="20.0" top="20.0" />
+            </VBox.margin>
+            <FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="132.0" prefWidth="252.0">
+               <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="255.0" text="Cambia tu cuenta">
+                  <styleClass>
+                     <String fx:value="font-family18" />
+                     <String fx:value="text-fill" />
+                  </styleClass>
+               </Label>
+               <Label fx:id="labelCorreo" alignment="TOP_RIGHT" prefHeight="63.0" prefWidth="257.0" text="Enviaremos un código por correo electrónico " wrapText="true">
+                  <styleClass>
+                     <String fx:value="text-fill" />
+                     <String fx:value="font-family13" />
+                  </styleClass>
+               </Label>
+               <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="180.0" spacing="20.0">
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="78.0">
+                     <Button fx:id="buttonCancelar" mnemonicParsing="false" onAction="#cancelar" style="-fx-background-color: #ff4444;" text="Cancelar">
+                        <styleClass>
+                           <String fx:value="background-button" />
+                           <String fx:value="dropshadow-shadow-button" />
+                           <String fx:value="radius-100percent" />
+                           <String fx:value="font-family13" />
+                           <String fx:value="text-fill-button" />
+                        </styleClass>
+                     </Button>
+                  </AnchorPane>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="83.0">
+                     <styleClass>
+                        <String fx:value="background-root" />
+                        <String fx:value="dropshadow-light-button" />
+                        <String fx:value="radius-100percent" />
+                     </styleClass>
+                     <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#continuar" text="Continuar">
+                        <styleClass>
+                           <String fx:value="background-button" />
+                           <String fx:value="dropshadow-shadow-button" />
+                           <String fx:value="radius-100percent" />
+                           <String fx:value="text-fill-button" />
+                           <String fx:value="font-family13" />
+                        </styleClass>
+                     </Button>
+                  </AnchorPane>
+               </HBox>
+            </FlowPane>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="110.0">
+               <styleClass>
+                  <String fx:value="dropshadow-light-button" />
+                  <String fx:value="radius-15percent" />
+               </styleClass>
+               <FlowPane alignment="CENTER" prefHeight="130.0" prefWidth="110.0">
+                  <styleClass>
+                     <String fx:value="background-root" />
+                     <String fx:value="radius-15percent" />
+                     <String fx:value="dropshadow-shadow-button" />
+                  </styleClass>
+                  <ImageView fx:id="imageViewPerfil" fitHeight="120.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@../recursos/imagenes/iniciar_sesion/user.jpg" />
+                  </ImageView>
+               </FlowPane>
+            </AnchorPane>
+         </HBox>
+      </VBox>
+   </FlowPane>
+   <stylesheets>
+      <URL value="@../recursos/css/estilos-general.css" />
+      <URL value="@../recursos/css/estilos-modo-oscuro.css" />
+   </stylesheets>
+</FlowPane>

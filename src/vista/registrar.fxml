@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<FlowPane fx:id="flowPanePrincipal" alignment="CENTER" columnHalignment="CENTER" hgap="10" minHeight="600.0" minWidth="450.0" prefHeight="680.0" prefWidth="1100.0" styleClass="background-root" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.RegistrarControlador">
+    <FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0">
+        <styleClass>
+            <String fx:value="background-root" />
+            <String fx:value="dropshadow-light" />
+            <String fx:value="radius-45percent" />
+        </styleClass>
+        <FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0">
+            <styleClass>
+                <String fx:value="background-root" />
+                <String fx:value="dropshadow-shadow" />
+                <String fx:value="radius-45percent" />
+            </styleClass>
+             <FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" orientation="VERTICAL" prefHeight="600.0" prefWidth="450.0">
+                 <FlowPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="96.0" prefWidth="399.0" styleClass="dropshadow-light-button">
+                     <Label contentDisplay="CENTER" text="BIENVENIDO" textFill="#243441">
+                         <styleClass>
+                             <String fx:value="font-family60" />
+                             <String fx:value="text-fill-gradient" />
+                             <String fx:value="dropshadow-shadow-button" />
+                         </styleClass>
+                     </Label>
+                 </FlowPane>
+                 <FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="170.0" maxWidth="170.0" prefHeight="170.0" prefWidth="170.0" prefWrapLength="34.0">
+                     <styleClass>
+                         <String fx:value="background-root" />
+                         <String fx:value="radius-100percent" />
+                     </styleClass>
+                     <FlowPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="170.0">
+                         <styleClass>
+                             <String fx:value="background-root" />
+                             <String fx:value="radius-100percent" />
+                             <String fx:value="dropshadow-light-button" />
+                         </styleClass>
+                         <FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="170.0">
+                             <styleClass>
+                                 <String fx:value="dropshadow-shadow-button" />
+                                 <String fx:value="background-root" />
+                                 <String fx:value="radius-100percent" />
+                             </styleClass>
+                             <ImageView fitHeight="170.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                 <Image url="@../recursos/imagenes/iniciar_sesion/logo.png" />
+                             </ImageView>
+                         </FlowPane>
+                     </FlowPane>
+                 </FlowPane>
+                 <Label text="COMPUTECNIO">
+                     <styleClass>
+                         <String fx:value="font-family40" />
+                         <String fx:value="text-fill-gradient" />
+                     </styleClass>
+                     <padding>
+                         <Insets bottom="-15.0" />
+                     </padding>
+                 </Label>
+                 <Label text="Centro de soluciones técnicas para su computadora ">
+                     <styleClass>
+                         <String fx:value="font-family13" />
+                         <String fx:value="text-fill" />
+                     </styleClass>
+                 </Label>
+             </FlowPane>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0">
+                <FlowPane maxWidth="380.0" prefHeight="50.0" prefWidth="380.0">
+                    <styleClass>
+                        <String fx:value="innershadow-light-input" />
+                        <String fx:value="background-root" />
+                        <String fx:value="radius-100percent" />
+                    </styleClass>
+                    <VBox.margin>
+                        <Insets top="35.0" />
+                    </VBox.margin>
+                    <FlowPane alignment="CENTER_LEFT" columnHalignment="CENTER" prefHeight="50.0" prefWidth="380.0">
+                        <styleClass>
+                            <String fx:value="innershadow-shadow-input" />
+                            <String fx:value="radius-100percent" />
+                            <String fx:value="background-root" />
+                        </styleClass>
+                        <SVGPath content="M7 2C5.895 2 5 2.895 5 4L5 26C5 27.105 5.895 28 7 28L23 28C24.105 28 25 27.105 25 26L25 4C25 2.895 24.105 2 23 2L18 2L18 5C18 5.552 17.552 6 17 6L13 6C12.448 6 12 5.552 12 5L12 2L7 2 z M 15 2 A 1 1 0 0 0 14 3 A 1 1 0 0 0 15 4 A 1 1 0 0 0 16 3 A 1 1 0 0 0 15 2 z M 15 10C15.872 10 16.376953 10.6875 16.376953 10.6875C17.562953 10.6875 18.269531 11.770734 18.269531 13.177734C18.269531 13.879734 17.880859 14.615234 17.880859 14.615234C17.880859 14.615234 18.097656 14.688875 18.097656 15.171875C18.097656 15.868875 17.533203 16.257812 17.533203 16.257812C17.473203 16.789813 16.828297 17.506453 16.529297 17.814453L16.529297 19.427734C17.470297 20.764734 21 20.136 21 23L9 23C9 20.136 12.529703 20.765687 13.470703 19.429688L13.470703 17.816406C13.171703 17.508406 12.527797 16.789812 12.466797 16.257812C12.466797 16.257812 11.902344 16.047875 11.902344 15.171875C11.902344 14.720875 12.119141 14.615234 12.119141 14.615234C12.119141 14.615234 11.644531 13.957281 11.644531 13.113281C11.644531 11.115281 13.147 10 15 10 z" fill="WHITE" layoutX="30.0" layoutY="30.0" styleClass="icon-fill">
+                            <FlowPane.margin>
+                                <Insets left="10.0" />
+                            </FlowPane.margin>
+                        </SVGPath>
+                        <TextField fx:id="textFieldNombresApelllidos" maxHeight="30.0" maxWidth="340.0" prefHeight="30.0" prefWidth="340.0" promptText="Nombres y Apellidos">
+                            <styleClass>
+                                <String fx:value="background-transparent" />
+                                <String fx:value="input-style" />
+                                <String fx:value="font-family15" />
+                            </styleClass>
+                        </TextField>
+                    </FlowPane>
+                </FlowPane>
+                <FlowPane layoutX="45.0" layoutY="140.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="380.0">
+                    <styleClass>
+                        <String fx:value="innershadow-light-input" />
+                        <String fx:value="background-root" />
+                        <String fx:value="radius-100percent" />
+                    </styleClass>
+                    <VBox.margin>
+                        <Insets top="30.0" />
+                    </VBox.margin>
+                    <FlowPane alignment="CENTER_LEFT" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="50.0" prefWidth="380.0">
+                        <styleClass>
+                            <String fx:value="innershadow-shadow-input" />
+                            <String fx:value="radius-100percent" />
+                            <String fx:value="background-root" />
+                        </styleClass>
+                        <SVGPath content="M10.5 8C6.9280619 8 4 10.928062 4 14.5L4 33.5C4 37.071938 6.9280619 40 10.5 40L37.5 40C41.071938 40 44 37.071938 44 33.5L44 14.5C44 10.928062 41.071938 8 37.5 8L10.5 8 z M 10.5 11L37.5 11C38.093018 11 38.640276 11.157774 39.126953 11.412109L24 19.589844L8.8730469 11.412109C9.3597237 11.157774 9.9069817 11 10.5 11 z M 10 18.84375L22.572266 25.638672C23.018266 25.879672 23.509 26 24 26C24.491 26 24.981734 25.879672 25.427734 25.638672L38 18.84375L38 36.951172C37.835551 36.974343 37.671413 37 37.5 37L10.5 37C10.328587 37 10.164449 36.974343 10 36.951172L10 18.84375 z" fill="WHITE" layoutX="30.0" layoutY="30.0" scaleX="0.7" scaleY="0.7" styleClass="icon-fill">
+                            <FlowPane.margin>
+                                <Insets left="3.0" right="-10.0" />
+                            </FlowPane.margin>
+                        </SVGPath>
+                        <TextField fx:id="textFieldCorreo" layoutX="25.0" maxHeight="33.0" maxWidth="345.0" prefHeight="33.0" prefWidth="345.0" promptText="Correo">
+                            <styleClass>
+                                <String fx:value="background-transparent" />
+                                <String fx:value="input-style" />
+                                <String fx:value="font-family15" />
+                            </styleClass>
+                        </TextField>
+                    </FlowPane>
+                </FlowPane>
+                <FlowPane maxWidth="380.0" prefHeight="50.0" prefWidth="380.0">
+                    <styleClass>
+                        <String fx:value="innershadow-light-input" />
+                        <String fx:value="background-root" />
+                        <String fx:value="radius-100percent" />
+                    </styleClass>
+                    <FlowPane alignment="CENTER_LEFT" columnHalignment="CENTER" prefHeight="50.0" prefWidth="380.0">
+                        <styleClass>
+                            <String fx:value="innershadow-shadow-input" />
+                            <String fx:value="radius-100percent" />
+                            <String fx:value="background-root" />
+                        </styleClass>
+                        <SVGPath content="M15 3C11.686 3 9 5.686 9 9L9 10C9 13.314 11.686 16 15 16C18.314 16 21 13.314 21 10L21 9C21 5.686 18.314 3 15 3 z M 11.097656 19.552734C8.1626562 20.319734 5.3940469 21.763797 4.3730469 23.091797C3.4590469 24.279797 4.329125 26 5.828125 26L24.169922 26C25.668922 26 26.539 24.278844 25.625 23.089844C24.604 21.761844 21.836344 20.319734 18.902344 19.552734C17.852344 20.453734 16.491 21 15 21C13.508 21 12.147656 20.452734 11.097656 19.552734 z" fill="WHITE" layoutX="30.0" layoutY="30.0">
+                            <FlowPane.margin>
+                                <Insets left="10.0" />
+                            </FlowPane.margin>
+                            <styleClass>
+                                <String fx:value="icon-fill" />
+                            </styleClass>
+                        </SVGPath>
+                        <TextField fx:id="textFieldUsuario" maxHeight="30.0" maxWidth="340.0" prefHeight="30.0" prefWidth="340.0" promptText="Usuario">
+                            <styleClass>
+                                <String fx:value="background-transparent" />
+                                <String fx:value="input-style" />
+                                <String fx:value="font-family15" />
+                            </styleClass>
+                        </TextField>
+                    </FlowPane>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+                </FlowPane>
+                <FlowPane layoutX="45.0" layoutY="299.0" maxWidth="380.0" prefHeight="50.0" prefWidth="380.0">
+                    <styleClass>
+                        <String fx:value="innershadow-light-input" />
+                        <String fx:value="background-root" />
+                        <String fx:value="radius-100percent" />
+                    </styleClass>
+                    <VBox.margin>
+                        <Insets top="30.0" />
+                    </VBox.margin>
+                    <AnchorPane maxWidth="380.0" prefHeight="50.0" prefWidth="380.0">
+                        <styleClass>
+                            <String fx:value="innershadow-shadow-input" />
+                            <String fx:value="radius-100percent" />
+                            <String fx:value="background-root" />
+                        </styleClass>
+                        <SVGPath content="M12 1C8.6761905 1 6 3.6761905 6 7L6 8C4.9 8 4 8.9 4 10L4 20C4 21.1 4.9 22 6 22L18 22C19.1 22 20 21.1 20 20L20 10C20 8.9 19.1 8 18 8L18 7C18 3.6761905 15.32381 1 12 1 z M 12 3C14.27619 3 16 4.7238095 16 7L16 8L8 8L8 7C8 4.7238095 9.7238095 3 12 3 z M 8 14C8.55 14 9 14.45 9 15C9 15.55 8.55 16 8 16C7.45 16 7 15.55 7 15C7 14.45 7.45 14 8 14 z M 12 14C12.55 14 13 14.45 13 15C13 15.55 12.55 16 12 16C11.45 16 11 15.55 11 15C11 14.45 11.45 14 12 14 z M 16 14C16.55 14 17 14.45 17 15C17 15.55 16.55 16 16 16C15.45 16 15 15.55 15 15C15 14.45 15.45 14 16 14 z" fill="WHITE" layoutX="10.0" layoutY="14.0">
+                            <FlowPane.margin>
+                                <Insets left="12.0" />
+                            </FlowPane.margin>
+                            <styleClass>
+                                <String fx:value="icon-fill" />
+                            </styleClass>
+                        </SVGPath>
+                        <TextField fx:id="textFieldContrasenia1" layoutX="25.0" layoutY="9.0" maxHeight="33.0" maxWidth="323.0" onKeyReleased="#sincronizarContrasenia" prefHeight="33.0" prefWidth="323.0" promptText="Contraseña" visible="false">
+                            <styleClass>
+                                <String fx:value="background-transparent" />
+                                <String fx:value="input-style" />
+                                <String fx:value="font-family15" />
+                            </styleClass>
+                        </TextField>
+                        <PasswordField fx:id="passwordFieldContrasenia1" layoutX="25.0" layoutY="9.0" onKeyReleased="#sincronizarContrasenia" prefHeight="33.0" prefWidth="323.0" promptText="Contraseña">
+                            <styleClass>
+                                <String fx:value="background-transparent" />
+                                <String fx:value="input-style" />
+                                <String fx:value="font-family15" />
+                            </styleClass>
+                        </PasswordField>
+                        <ToggleButton fx:id="toggleButtonMostrarContrasenia1" focusTraversable="false" layoutX="348.0" layoutY="18.0" maxHeight="14.0" maxWidth="24.0" minHeight="14.0" minWidth="24.0" mnemonicParsing="false" onAction="#MostrarContrasenia" prefHeight="34.0" prefWidth="33.0">
+                            <graphic>
+                                <SVGPath content="M18.9375 12.84375C8.921875 15.546875 1.613281 23.921875 1.25 24.34375C0.929688 24.71875 0.929688 25.28125 1.25 25.65625C1.683594 26.160156 11.988281 38 25 38C38.011719 38 48.316406 26.160156 48.75 25.65625C49.070313 25.28125 49.070313 24.71875 48.75 24.34375C48.386719 23.921875 41.078125 15.550781 31.0625 12.84375C34.027344 14.8125 36 18.171875 36 22C35.996094 28.074219 31.074219 33 25 33C18.925781 33 14.003906 28.074219 14 22C14 18.171875 15.972656 14.8125 18.9375 12.84375 Z M 25 17C22.238281 17 20 19.238281 20 22C20 24.761719 22.238281 27 25 27C27.761719 27 30 24.761719 30 22C30 19.238281 27.761719 17 25 17Z" scaleX="0.5" scaleY="0.5" styleClass="icon-fill" />
+                            </graphic>
+                            <styleClass>
+                                <String fx:value="background-transparent" />
+                                <String fx:value="toggle-button-style" />
+                            </styleClass>
+                        </ToggleButton>
+                    </AnchorPane>
+                </FlowPane>
+                <FlowPane layoutX="45.0" layoutY="320.0" maxWidth="380.0" prefHeight="50.0" prefWidth="380.0">
+                    <styleClass>
+                        <String fx:value="innershadow-light-input" />
+                        <String fx:value="background-root" />
+                        <String fx:value="radius-100percent" />
+                    </styleClass>
+                    <VBox.margin>
+                        <Insets top="30.0" />
+                    </VBox.margin>
+                    <AnchorPane maxWidth="380.0" prefHeight="50.0" prefWidth="380.0">
+                        <styleClass>
+                            <String fx:value="innershadow-shadow-input" />
+                            <String fx:value="radius-100percent" />
+                            <String fx:value="background-root" />
+                        </styleClass>
+                        <SVGPath content="M12 1C8.6761905 1 6 3.6761905 6 7L6 8C4.9 8 4 8.9 4 10L4 20C4 21.1 4.9 22 6 22L18 22C19.1 22 20 21.1 20 20L20 10C20 8.9 19.1 8 18 8L18 7C18 3.6761905 15.32381 1 12 1 z M 12 3C14.27619 3 16 4.7238095 16 7L16 8L8 8L8 7C8 4.7238095 9.7238095 3 12 3 z M 8 14C8.55 14 9 14.45 9 15C9 15.55 8.55 16 8 16C7.45 16 7 15.55 7 15C7 14.45 7.45 14 8 14 z M 12 14C12.55 14 13 14.45 13 15C13 15.55 12.55 16 12 16C11.45 16 11 15.55 11 15C11 14.45 11.45 14 12 14 z M 16 14C16.55 14 17 14.45 17 15C17 15.55 16.55 16 16 16C15.45 16 15 15.55 15 15C15 14.45 15.45 14 16 14 z" fill="WHITE" layoutX="10.0" layoutY="14.0" styleClass="icon-fill">
+                            <FlowPane.margin>
+                                <Insets left="12.0" />
+                            </FlowPane.margin>
+                        </SVGPath>
+                        <TextField fx:id="textFieldContrasenia2" layoutX="25.0" layoutY="9.0" maxHeight="33.0" maxWidth="323.0" onKeyReleased="#sincronizarContrasenia" prefHeight="33.0" prefWidth="323.0" promptText="Vuelva a ingresar la contraseña" visible="false">
+                            <styleClass>
+                                <String fx:value="background-transparent" />
+                                <String fx:value="input-style" />
+                                <String fx:value="font-family15" />
+                            </styleClass>
+                        </TextField>
+                        <PasswordField fx:id="passwordFieldContrasenia2" layoutX="25.0" layoutY="9.0" onKeyReleased="#sincronizarContrasenia" prefHeight="33.0" prefWidth="323.0" promptText="Vuelva a ingresar la contraseña">
+                            <styleClass>
+                                <String fx:value="background-transparent" />
+                                <String fx:value="input-style" />
+                                <String fx:value="font-family15" />
+                            </styleClass>
+                        </PasswordField>
+                        <ToggleButton fx:id="toggleButtonMostrarContrasenia2" focusTraversable="false" layoutX="348.0" layoutY="18.0" maxHeight="14.0" maxWidth="24.0" minHeight="14.0" minWidth="24.0" mnemonicParsing="false" onAction="#MostrarContrasenia" prefHeight="34.0" prefWidth="33.0">
+                            <graphic>
+                                <SVGPath content="M18.9375 12.84375C8.921875 15.546875 1.613281 23.921875 1.25 24.34375C0.929688 24.71875 0.929688 25.28125 1.25 25.65625C1.683594 26.160156 11.988281 38 25 38C38.011719 38 48.316406 26.160156 48.75 25.65625C49.070313 25.28125 49.070313 24.71875 48.75 24.34375C48.386719 23.921875 41.078125 15.550781 31.0625 12.84375C34.027344 14.8125 36 18.171875 36 22C35.996094 28.074219 31.074219 33 25 33C18.925781 33 14.003906 28.074219 14 22C14 18.171875 15.972656 14.8125 18.9375 12.84375 Z M 25 17C22.238281 17 20 19.238281 20 22C20 24.761719 22.238281 27 25 27C27.761719 27 30 24.761719 30 22C30 19.238281 27.761719 17 25 17Z" scaleX="0.5" scaleY="0.5" styleClass="icon-fill" />
+                            </graphic>
+                            <styleClass>
+                                <String fx:value="background-transparent" />
+                                <String fx:value="toggle-button-style" />
+                            </styleClass>
+                        </ToggleButton>
+                    </AnchorPane>
+                </FlowPane>
+            <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="380.0">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+               <left>
+                   <FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="180.0" BorderPane.alignment="CENTER">
+                       <styleClass>
+                           <String fx:value="innershadow-light-input" />
+                           <String fx:value="background-root" />
+                           <String fx:value="radius-100percent" />
+                       </styleClass>
+                       <FlowPane alignment="CENTER_LEFT" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="180.0">
+                           <styleClass>
+                               <String fx:value="innershadow-shadow-input" />
+                               <String fx:value="radius-100percent" />
+                               <String fx:value="background-root" />
+                           </styleClass>
+                           <SVGPath content="M22.916,6.625l1.719,4.055c0.749,1.767,0.334,3.845-1.028,5.137l-3.212,3.048c-0.362,0.344-0.55,0.843-0.469,1.335c0.31,1.881,0.997,3.736,2.061,5.566c1.062,1.826,2.355,3.38,3.88,4.661c0.404,0.339,0.965,0.427,1.465,0.26l3.747-1.25c1.725-0.575,3.603,0.086,4.661,1.64l2.465,3.621c1.23,1.807,1.009,4.299-0.517,5.831l-1.636,1.642c-1.628,1.634-3.953,2.227-6.104,1.556c-5.078-1.584-9.746-6.286-14.006-14.107c-4.266-7.832-5.771-14.478-4.516-19.936c0.528-2.297,2.163-4.126,4.298-4.808l2.153-0.688C19.897,3.545,22.052,4.587,22.916,6.625z" fill="WHITE" layoutX="30.0" layoutY="30.0" scaleX="0.7" scaleY="0.7" styleClass="icon-fill">
+                               <FlowPane.margin>
+                                   <Insets left="10.0" right="-7.0" />
+                               </FlowPane.margin>
+                           </SVGPath>
+                           <TextField fx:id="textFieldTelefono" maxHeight="33.0" maxWidth="340.0" prefHeight="33.0" prefWidth="136.0" promptText="Cel.">
+                               <styleClass>
+                                   <String fx:value="background-transparent" />
+                                   <String fx:value="input-style" />
+                                   <String fx:value="font-family15" />
+                               </styleClass>
+                           </TextField>
+                       </FlowPane>
+                   </FlowPane>
+               </left>
+               <right>
+                   <FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="180.0" BorderPane.alignment="CENTER">
+                       <styleClass>
+                           <String fx:value="background-root" />
+                           <String fx:value="radius-100percent" />
+                           <String fx:value="dropshadow-light-button" />
+                       </styleClass>
+                       <ComboBox fx:id="comboBoxTipoUsuario" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="180.0" promptText="Tipo de Usuario">
+                          <styleClass>
+                              <String fx:value="radius-100percent" />
+                              <String fx:value="background-root" />
+                              <String fx:value="dropshadow-shadow-button" />
+                           <String fx:value="font-family15" />
+                          </styleClass>
+                       </ComboBox>
+                   </FlowPane>
+               </right>
+            </BorderPane>
+                <AnchorPane maxHeight="50.0" maxWidth="380.0" prefHeight="50.0" prefWidth="380.0">
+                    <styleClass>
+                        <String fx:value="background-root" />
+                        <String fx:value="dropshadow-light-button" />
+                        <String fx:value="radius-100percent" />
+                    </styleClass>
+                    <VBox.margin>
+                        <Insets top="30.0" />
+                    </VBox.margin>
+                    <Button mnemonicParsing="false" onAction="#Registrar" prefHeight="50.0" prefWidth="380.0" text="REGISTRAR">
+                        <styleClass>
+                            <String fx:value="radius-100percent" />
+                            <String fx:value="font-family15" />
+                            <String fx:value="text-fill-button" />
+                            <String fx:value="background-button" />
+                            <String fx:value="dropshadow-shadow-button" />
+                        </styleClass>
+                    </Button>
+                </AnchorPane>
+            </VBox>
+        </FlowPane>
+    </FlowPane>
+    <effect>
+        <DropShadow />
+    </effect>
+   <stylesheets>
+      <URL value="@../recursos/css/estilos-general.css" />
+      <URL value="@../recursos/css/estilos-modo-oscuro.css" />
+   </stylesheets>
+</FlowPane>

@@ -1,0 +1,29 @@
+*{
+    -fx-root: #00C851;
+}
+
+.fill-icon{
+    -fx-fill: -fx-root;
+}
+
+.text-fill{
+    -fx-text-fill:  -fx-root;
+}
+.border-bottom{
+    -fx-border-color: -fx-root;
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-border-width: 1px;
+}
+.background-button{
+    -fx-background-color: -fx-root;
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: -fx-root;
+    -fx-background-radius: 2.0em;
+    -fx-effect: dropshadow(three-pass-box, -fx-light, 5, 0.0, -2, -2);
+    -fx-border-color: -fx-shadow;
+    -fx-border-style: hidden solid solid hidden;
+    -fx-border-width: 1px;
+    -fx-border-radius: 2.0em;
+}

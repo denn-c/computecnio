@@ -1,0 +1,214 @@
+* {
+    -fx-main: #243441;
+    -fx-light: #4F5D67;
+    -fx-shadow: #0C1116;
+    -fx-text: #ffffff;
+    -fx-button: #0AFFEF;
+    -fx-prompt: #707070;
+    -fx-hover:rgba(112, 112, 112,0.2);
+}
+
+.background-root {
+    -fx-background-color: -fx-main;
+}
+
+.dropshadow-light {
+    -fx-effect: dropshadow(three-pass-box, -fx-light, 10, 0.0, -3, -3);
+}
+
+.dropshadow-shadow {
+    -fx-effect: dropshadow(three-pass-box, -fx-shadow, 10, 0.0, 3, 3);
+}
+
+.innershadow-shadow-text-area {
+    -fx-effect: innershadow(three-pass-box, -fx-shadow, 5, 0.0, 1, 1);
+}
+
+.innershadow-light-tex-area {
+    -fx-effect: innershadow(three-pass-box, -fx-light, 5, 0.0, -1, -1);
+}
+
+.innershadow-shadow-input {
+    -fx-effect: innershadow(three-pass-box, -fx-shadow, 10, 0.0, 2, 2);
+}
+
+.innershadow-light-input {
+    -fx-effect: innershadow(three-pass-box, -fx-light, 10, 0.0, -2, -2);
+}
+
+.dropshadow-shadow-button {
+    -fx-effect: dropshadow(three-pass-box, -fx-shadow, 12, 0.0, 3, 3);
+}
+
+.dropshadow-light-button {
+    -fx-effect: dropshadow(three-pass-box, -fx-light, 12, 0.0, -3, -3);
+}
+
+.text-fill {
+    -fx-text-fill: -fx-text;
+}
+
+.background-button {
+    -fx-background-color: -fx-button;
+}
+
+.background-button:focused {
+    -fx-border-width: 2;
+    -fx-border-style: dotted;
+    -fx-border-color: -fx-prompt;
+    -fx-border-radius: 100;
+}
+
+.text-fill-button {
+    -fx-text-fill: -fx-main;
+}
+
+.input-style {
+    -fx-prompt-text-fill: -fx-prompt;
+    -fx-text-fill: -fx-text;
+}
+
+.icon-fill {
+    -fx-fill: -fx-prompt;
+}
+
+.icon-fill-dialog {
+    -fx-fill: -fx-main;
+}
+
+.toggle-button-style:selected > .icon-fill {
+    -fx-fill: -fx-text;
+    -fx-effect: dropshadow(three-pass-box, -fx-text, 12, 0.0, 0, 0);
+}
+
+.button-footer-style {
+    -fx-text-fill: -fx-prompt;
+}
+
+.button-footer-style:hover {
+    -fx-text-fill: -fx-text;
+}
+
+.button-footer-style:focused {
+    -fx-border-width: 2;
+    -fx-border-style: dotted;
+    -fx-border-color: -fx-prompt;
+    -fx-border-radius: 2;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: -fx-main;
+}
+
+.scroll-bar:horizontal,
+.scroll-bar:vertical{
+    -fx-background-color: -fx-main;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+
+    -fx-background-radius: 2.0em;
+    -fx-effect: dropshadow(three-pass-box, -fx-light, 5, 0.0, -2, -2);
+    -fx-border-color: -fx-shadow;
+    -fx-border-style: hidden solid solid hidden;
+    -fx-border-width: 1px;
+    -fx-border-radius: 2.0em;
+    -fx-background-color: -fx-main;
+}
+
+.combo-box:focused {
+    -fx-border-width: 2;
+    -fx-border-style: dotted;
+    -fx-border-color: -fx-prompt;
+    -fx-border-radius: 100;
+}
+
+.combo-box-base .text {
+    -fx-fill: -fx-text;
+}
+
+.combo-box .arrow-button .arrow {
+    -fx-background-color: -fx-button;
+}
+
+.combo-box .list-view {
+    -fx-background-color: -fx-main;
+    -fx-text-fill: -fx-text;
+    -fx-background-radius: 10;
+    -fx-padding: 2;
+    -fx-translate-y: 8;
+    -fx-effect: dropshadow(three-pass-box, -fx-light, 10, 0, 0, 0);
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: transparent;
+}
+
+.combo-box-popup .list-view .list-cell:filled {
+    -fx-background-color: transparent;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover {
+    -fx-background-color: -fx-prompt;
+    -fx-background-radius: 10;
+}
+.combo-box-popup .list-view .list-cell:filled:focused{
+    -fx-border-width: 1;
+    -fx-border-style: dashed;
+    -fx-border-color: -fx-prompt;
+    -fx-padding: 2 4;
+    -fx-border-radius: 10;
+}
+
+/*Menu contextual*/
+.menu-item {
+    -fx-padding: 1;
+    -fx-background: -fx-prompt;
+}
+.menu-item:disabled{
+    -fx-background-color: -fx-main;
+    -fx-opacity: 1;
+    -fx-text-fill: -fx-prompt;
+}
+.menu-item:disabled:focused,
+.menu-item:disabled:hover{
+    -fx-background-color: -fx-hover;
+}
+
+.menu-item .label{
+    -fx-font-size: 15;
+    -fx-text-fill: -fx-text;
+}
+
+.context-menu {
+    -fx-background-color: -fx-main;
+    -fx-border-color: #A5A5A5;
+    -fx-border-width: 2;
+}
+
+.list-cell{
+    -fx-background-color: -fx-main;
+    -fx-text-fill: -fx-text;
+}
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-text-fill: -fx-prompt;
+}
+
+.list-cell:filled:hover {
+    -fx-text-fill: -fx-main;
+}
+
+/*Ventana de autocompletado*/
+
+.auto-complete-popup{
+    -fx-control-inner-background:transparent;
+    -fx-accent: -fx-prompt;
+    -fx-selection-bar-non-focused:-fx-hover;
+}
+
+.auto-complete-popup  > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:focused,
+.auto-complete-popup  > .list-view > .virtual-flow > .clipped-container > .sheet > .list-cell:filled:hover {
+    -fx-text-fill: -fx-text;
+}

@@ -1,0 +1,7 @@
+* {
+    -fx-root: #ff4444;
+}
+
+.input-not-valid {
+    -fx-prompt-text-fill: -fx-root;
+}

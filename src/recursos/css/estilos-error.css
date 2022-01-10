@@ -1,0 +1,29 @@
+* {
+    -fx-root: #ff4444;
+}
+
+.fill-icon {
+    -fx-fill: -fx-root;
+}
+
+.text-fill {
+    -fx-text-fill: -fx-root;
+}
+
+.border-bottom {
+    -fx-border-color: -fx-root;
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-border-width: 1px;
+}
+
+.background-button {
+    -fx-background-color: -fx-root;
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: -fx-root;
+}
+.scroll-bar:horizontal,
+.scroll-bar:vertical{
+    -fx-background-color: transparent;
+}

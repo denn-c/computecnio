@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.SVGPath?>
+
+<FlowPane fx:id="flowPanePrincipal" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="420.0" styleClass="background-root" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Alerta">
+    <AnchorPane fx:id="anchorPaneContenedorPrimario" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="400.0">
+        <styleClass>
+            <String fx:value="dropshadow-light-button" />
+            <String fx:value="radius-15percent" />
+          <String fx:value="background-root" />
+        </styleClass>
+        <VBox fx:id="vBoxContenedorSecundario" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="400.0">
+            <HBox alignment="CENTER_LEFT" prefHeight="27.0" prefWidth="400.0" styleClass="radius-north">
+            <SVGPath fx:id="svgPathIcono" scaleX="0.9" scaleY="0.9" styleClass="fill-icon" />
+                <Label fx:id="labelTitutlo" prefHeight="23.0" prefWidth="315.0">
+                    <styleClass>
+                        <String fx:value="text-fill" />
+                        <String fx:value="font-family18" />
+                    </styleClass>
+                    <HBox.margin>
+                        <Insets left="2.0" />
+                    </HBox.margin>
+              </Label>
+            <padding>
+               <Insets left="20.0" top="15.0" />
+            </padding>
+            </HBox>
+         <Label fx:id="labelDescripcion" alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="360.0" wrapText="true">
+            <VBox.margin>
+               <Insets bottom="6.0" left="20.0" right="20.0" top="5.0" />
+            </VBox.margin>
+            <styleClass>
+               <String fx:value="text-fill" />
+               <String fx:value="font-family13" />
+               <String fx:value="border-bottom" />
+            </styleClass>
+         </Label>
+            <AnchorPane fx:id="anchorPaneMargen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="360.0">
+                <VBox.margin>
+                    <Insets left="20.0" right="20.0" />
+                </VBox.margin>
+                <AnchorPane fx:id="anchorPaneContenedorDetalles" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="360.0">
+                    <styleClass>
+                        <String fx:value="background-root" />
+                        <String fx:value="radius-15percent" />
+                        <String fx:value="innershadow-shadow-text-area" />
+                    </styleClass>
+                    <TextArea fx:id="textAreaDetalles" editable="false" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="360.0" wrapText="true">
+                        <styleClass>
+                            <String fx:value="radius-15percent" />
+                            <String fx:value="text-fill" />
+                            <String fx:value="font-family13" />
+                     <String fx:value="innershadow-light-tex-area" />
+                        </styleClass>
+                    </TextArea>
+                </AnchorPane>
+            </AnchorPane>
+         <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="33.0" prefWidth="360.0">
+            <VBox.margin>
+               <Insets left="20.0" right="20.0" />
+            </VBox.margin>
+            <right>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="70.0" BorderPane.alignment="CENTER">
+                    <styleClass>
+                        <String fx:value="background-root" />
+                        <String fx:value="dropshadow-light-button" />
+                        <String fx:value="radius-100percent" />
+                    </styleClass>
+                    <Button fx:id="buttonCerrar" mnemonicParsing="false" onAction="#cerrar" text="Aceptar">
+                       <styleClass>
+                           <String fx:value="radius-100percent" />
+                           <String fx:value="dropshadow-shadow-button" />
+                           <String fx:value="font-family13" />
+                           <String fx:value="text-fill-button" />
+                        <String fx:value="background-button" />
+                       </styleClass>
+                    </Button>
+                </AnchorPane>
+            </right>
+            <left>
+                <AnchorPane fx:id="anchorPaneContenedorBotonDetalles" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="144.0" BorderPane.alignment="CENTER">
+                    <styleClass>
+                        <String fx:value="background-root" />
+                        <String fx:value="dropshadow-light-button" />
+                        <String fx:value="radius-100percent" />
+                    </styleClass>
+                    <ToggleButton fx:id="ToggleButtonMostarDetalles" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#verDetalles" prefHeight="29.0" prefWidth="144.0" text="Mostrar detalles">
+                       <styleClass>
+                           <String fx:value="radius-100percent" />
+                           <String fx:value="font-family13" />
+                           <String fx:value="text-fill-button" />
+                           <String fx:value="dropshadow-shadow-button" />
+                           <String fx:value="background-button" />
+                       </styleClass>
+                       <graphic>
+                           <SVGPath fx:id="svgPathMostrarDetalles" content="M24 4C12.972066 4 4 12.972074 4 24C4 35.027926 12.972066 44 24 44C35.027934 44 44 35.027926 44 24C44 12.972074 35.027934 4 24 4 z M 24 7C33.406615 7 41 14.593391 41 24C41 33.406609 33.406615 41 24 41C14.593385 41 7 33.406609 7 24C7 14.593391 14.593385 7 24 7 z M 31.986328 18.978516 A 1.50015 1.50015 0 0 0 30.939453 19.439453L24 26.378906L17.060547 19.439453 A 1.50015 1.50015 0 0 0 15.984375 18.984375 A 1.50015 1.50015 0 0 0 14.939453 21.560547L22.939453 29.560547 A 1.50015 1.50015 0 0 0 25.060547 29.560547L33.060547 21.560547 A 1.50015 1.50015 0 0 0 31.986328 18.978516 z" scaleX="0.5" scaleY="0.5" styleClass="icon-fill-dialog" translateX="10.0" />
+                       </graphic>
+                       <padding>
+                           <Insets left="-20.0" />
+                       </padding>
+                    </ToggleButton>
+                </AnchorPane>
+            </left>
+            <padding>
+               <Insets top="7.0" />
+            </padding>
+         </BorderPane>
+            <styleClass>
+              <String fx:value="background-root" />
+              <String fx:value="dropshadow-shadow-button" />
+              <String fx:value="radius-15percent" />
+            </styleClass>
+        </VBox>
+    </AnchorPane>
+   <stylesheets>
+      <URL value="@../recursos/css/estilos-general.css" />
+      <URL value="@../recursos/css/estilos-modo-oscuro.css" />
+   </stylesheets>
+</FlowPane>
