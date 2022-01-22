@@ -151,23 +151,22 @@
             </AnchorPane>
          </FlowPane>
          <AnchorPane maxHeight="50.0" maxWidth="380.0" prefHeight="50.0" prefWidth="380.0">
-            <styleClass>
-               <String fx:value="background-root" />
-               <String fx:value="dropshadow-light-button" />
-               <String fx:value="radius-100percent" />
-            </styleClass>
             <VBox.margin>
                <Insets top="40.0" />
             </VBox.margin>
-            <Button mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="50.0" prefWidth="380.0" text="ACCEDER">
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#iniciarSesion" prefHeight="50.0" prefWidth="380.0" text="Acceder">
                <styleClass>
                   <String fx:value="radius-100percent" />
-                  <String fx:value="font-family15" />
+                  <String fx:value="font-family19-button" />
                   <String fx:value="text-fill-button" />
                   <String fx:value="background-button" />
                   <String fx:value="dropshadow-shadow-button" />
                </styleClass>
             </Button>
+            <styleClass>
+               <String fx:value="background-button" />
+               <String fx:value="radius-100percent" />
+            </styleClass>
          </AnchorPane>
          <HBox alignment="CENTER" prefHeight="36.0" prefWidth="450.0">
             <VBox.margin>

@@ -323,10 +323,10 @@
                     <VBox.margin>
                         <Insets top="30.0" />
                     </VBox.margin>
-                    <Button mnemonicParsing="false" onAction="#Registrar" prefHeight="50.0" prefWidth="380.0" text="REGISTRAR">
+                    <Button mnemonicParsing="false" onAction="#Registrar" prefHeight="50.0" prefWidth="380.0" text="Registrar">
                         <styleClass>
                             <String fx:value="radius-100percent" />
-                            <String fx:value="font-family15" />
+                            <String fx:value="font-family19-button" />
                             <String fx:value="text-fill-button" />
                             <String fx:value="background-button" />
                             <String fx:value="dropshadow-shadow-button" />

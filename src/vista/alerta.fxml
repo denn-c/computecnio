@@ -74,7 +74,7 @@
             <right>
                 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="70.0" BorderPane.alignment="CENTER">
                     <styleClass>
-                        <String fx:value="background-root" />
+                        <String fx:value="background-button" />
                         <String fx:value="dropshadow-light-button" />
                         <String fx:value="radius-100percent" />
                     </styleClass>
@@ -92,7 +92,7 @@
             <left>
                 <AnchorPane fx:id="anchorPaneContenedorBotonDetalles" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="144.0" BorderPane.alignment="CENTER">
                     <styleClass>
-                        <String fx:value="background-root" />
+                        <String fx:value="background-button" />
                         <String fx:value="dropshadow-light-button" />
                         <String fx:value="radius-100percent" />
                     </styleClass>
